@@ -3,16 +3,13 @@ uvicorn[standard]==0.30.6
 pydantic==2.9.2
 python-dotenv==1.0.1
 
-# RAG stack
+# LangChain
 langchain==0.3.7
 langchain-community==0.3.5
 langchain-openai==0.2.5
-faiss-cpu==1.9.0
-sentence-transformers==3.2.1
 
-# Local Llama 2 inference (default LLM_PROVIDER=llama_cpp)
-# Requires a downloaded GGUF model file, e.g. llama-2-7b-chat.Q4_K_M.gguf
-llama-cpp-python==0.3.1
+# Lightweight keyword retrieval
+rank-bm25==0.2.2
 
-# Only needed if LLM_PROVIDER=hf_endpoint
-huggingface-hub==0.25.2
+# Groq/OpenAI-compatible API
+openai==1.54.4
